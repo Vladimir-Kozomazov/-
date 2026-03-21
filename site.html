@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Задаю заголовок для сайта -->
+    <title> Портфолио | Владимир Козомазов </title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Шапка сайта, class нужен для css, там написаны правила для заголовка-->
+    <header class="header">
+        <!-- class header позволяет обратиться к правилам в css, которые ужимают немного надпись -->
+         <!-- class header-content размещает элементы по своим местам -->
+        <div class="container header-content">
+            <!-- <a> это тег ссылки, href="#" адрес перехода, где # означает остаться на этой же странице -->
+            <!-- logo окрашивает цвет, как написано в css -->    
+            <a href="#" class="logo"> Владимир Козомазов </a>
+            <!-- Навигационный блок -->
+            <nav class="nav">
+                <!-- Здесь имеются 3 ссылки, которые перемещают по одной странице -->
+                <a href="#about">Обо мне</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero) -->
+    <section class="hero">
+        <div class="container">
+            <h1>Привет, я <span class="highlight">Ваше Имя</span></h1>
+            <p class="subtitle">Специальность / Должность (например, Frontend-разработчик)</p>
+            <p class="description">
+                Кратко опишите свою ценность. Например: Создаю удобные интерфейсы 
+                и помогаю бизнесу решать задачи с помощью кода.
+            </p>
+            <a href="#contact" class="btn">Связаться со мной</a>
+        </div>
+    </section>
+
+    <!-- Обо мне / Навыки -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <p>
+                    Здесь расскажите подробнее о своем опыте, образовании и подходе к работе.
+                    Работодатели ищут не просто навыки, а личность и умение решать проблемы.
+                </p>
+                <!-- Список навыков -->
+                <div class="skills">
+                    <h3>Мои навыки</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Visual Studio Code</li>
+                        <li>Git & GitHub</li>
+                        <li>Английский язык</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="projects-grid">
+                <!-- Проект 1 -->
+                <article class="project-card">
+                    <h3>Название проекта 1</h3>
+                    <p>Краткое описание: что делает проект и какую задачу решает.</p>
+                    <a href="#" class="link">Посмотреть код →</a>
+                </article>
+                <!-- Проект 2 -->
+                <article class="project-card">
+                    <h3>Название проекта 2</h3>
+                    <p>Краткое описание: какие технологии использовались.</p>
+                    <a href="#" class="link">Посмотреть код →</a>
+                </article>
+                <!-- Проект 3 -->
+                <article class="project-card">
+                    <h3>Название проекта 3</h3>
+                    <p>Краткое описание: ссылка на живое демо или репозиторий.</p>
+                    <a href="#" class="link">Посмотреть код →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Свяжитесь со мной</h2>
+            <p>Открыт к предложениям и сотрудничеству.</p>
+            <div class="contacts">
+                <a href="mailto:email@example.com" class="btn">Написать на Email</a>
+                <a href="https://t.me/ваш_ник" class="btn btn-outline">Telegram</a>
+                <a href="https://github.com/ваш_ник" class="btn btn-outline">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ваше Имя. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
