@@ -1,0 +1,206 @@
+/* --- 1. Глобальные настройки (Reset & Base) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Современный шрифт */
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Контейнер для центрирования контента */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- 2. Шапка (Header) --- */
+.header {
+    padding: 20px 0;
+    position: sticky; /* Липкая шапка */
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #eee;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #2563EB; /* Акцентный цвет (синий) */
+}
+
+.nav a {
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #2563EB;
+}
+
+/* --- 3. Главный экран (Hero) --- */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #2563EB;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+/* --- 4. Кнопки --- */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2563EB;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #2563EB;
+    color: #2563EB;
+    margin-left: 10px;
+}
+
+.btn-outline:hover {
+    background-color: #2563EB;
+    color: white;
+}
+
+/* --- 5. Секции --- */
+.section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f9fafb;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* --- 6. Обо мне и Навыки --- */
+.about-content {
+    text-align: center;
+}
+
+.skills {
+    margin-top: 30px;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.skills li {
+    background: #eef2ff;
+    color: #2563EB;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* --- 7. Сетка проектов --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card .link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563EB;
+    font-weight: 600;
+}
+
+/* --- 8. Контакты и Подвал --- */
+.contacts {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* --- 9. Адаптивность (Мобильные) --- */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    .subtitle { font-size: 1.2rem; }
+    .nav { display: none; /* Для простоты скрываем на мобильном */ }
+    .btn-outline { margin: 10px 0 0 0; display: block; width: 100%; }
+}
